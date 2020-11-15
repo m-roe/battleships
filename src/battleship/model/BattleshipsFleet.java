@@ -40,6 +40,7 @@ public class BattleshipsFleet {
 	
 	public boolean checkHitShip(int rowIdx, int colIdx) {
 		boolean hitShip = false;
+		// catch exception when user inputs wrong position
 		try {
 			if(this.fleetPositionMatrix[rowIdx][colIdx] != null) {
 				this.fleetPositionMatrix[rowIdx][colIdx].setBattleshipVisibility(true);
