@@ -2,16 +2,16 @@ package battleship.model;
 
 import java.util.ArrayList;
 
+import battleship.BattleshipsConfig;
+import battleship.util.Printer;
+import battleship.util.RandomNumbers;
+
 /**
  * Class for creating a battleship fleet with a given number of ships.
  * 
  * @author Mareike Röncke
  * @version 1.0, November 2020.
  */
-
-import battleship.BattleshipsConfig;
-import battleship.util.Printer;
-import battleship.util.RandomNumbers;
 
 public class BattleshipsFleet {
 	int battleshipNumber;
