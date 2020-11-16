@@ -12,10 +12,10 @@ public class BattleshipsConfig {
 	// Life count for every user playing the game
 	public static final int LIFES = 3;
 	// size of the battlefield (number of rows and columns are even)
-	public static final int FIELD_SIZE = 3;
+	public static int FIELD_SIZE = 5;
 	// number of battleships to be found on the field
-	public static final int BATTLESHIP_NO = 3;
+	public static int BATTLESHIP_NO = 3;
 	public static final String[] SHIP_SHAPES = {"o", "x", "#", "+", "§"};
-	public static final boolean DEBUGGER = true;
+	public static final boolean DEBUGGER = false;
 
 }
