@@ -69,8 +69,8 @@ public class BattleshipsFleet {
 		int addedPositions = 0;
 		// put up a ship on a free field
 		while(addedPositions < 1) {
-			int randomRowIdx = RandomNumbers.generateRandomIntIntRange(1, 3);
-			int randomColIdx = RandomNumbers.generateRandomIntIntRange(1, 3);
+			int randomRowIdx = RandomNumbers.generateRandomIntIntRange(1, BattleshipsConfig.FIELD_SIZE);
+			int randomColIdx = RandomNumbers.generateRandomIntIntRange(1, BattleshipsConfig.FIELD_SIZE);
 			if(this.fleetPositionMatrix[randomColIdx][randomRowIdx] == null) {
 				battleshipPositions[0][0] = randomColIdx;
 				battleshipPositions[0][1] = randomRowIdx;
