@@ -73,12 +73,6 @@ public class Printer {
 	 	System.out.print(" ");
 	}
 	
-	public static void printHeader(int lifes, ArrayList<String> hitFields) {
-		printGameTitle();
-		printLifes(lifes);
-		printHits(hitFields);	
-	}
-	
 	public static void printGameTitle() {
 		printTitleSeparator();
 		System.out.println("~~~~~~~~~ BATTLESHIPS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
@@ -113,6 +107,12 @@ public class Printer {
 	
 	public static void printTitleSeparator() {
 		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+	}
+	
+	
+	public static void printFieldInfo() {
+		System.out.println("Thank you! Your game field will be " + BattleshipsConfig.FIELD_SIZE + " * " + BattleshipsConfig.FIELD_SIZE);
+		System.out.println("There will be " + BattleshipsConfig.BATTLESHIP_NO + " invisible ships on the battlefield.");
 	}
 	
 	public static void userInputError() {

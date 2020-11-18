@@ -10,10 +10,16 @@ import java.util.Scanner;
 
 public class BattleshipsInput {
 	
-	public static String consoleInput() {
+	public static String consoleInputStr() {
 		Scanner input = new Scanner(System.in);
 		String inputStr = input.nextLine();
 		return inputStr;
+	}
+	
+	public static int consoleInputInt() {
+		Scanner input = new Scanner(System.in);
+		int inputInt = input.nextInt();
+		return inputInt;
 	}
 	
 }
