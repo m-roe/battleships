@@ -119,12 +119,12 @@ public class Printer {
 		System.out.println("Please input a valid battlefield position.");
 		System.out.println("Valid positions are ... ");
 		char character = 'A';
-		for(var i = 0; i < BattleshipsConfig.FIELD_SIZE; i++) {
+		for(int i = 0; i < BattleshipsConfig.FIELD_SIZE; i++) {
 			System.out.print(character + ", ");
 			character++;
 		}
 		System.out.print("for columns and ");
-		for(var i = 0; i < BattleshipsConfig.FIELD_SIZE; i++) {
+		for(int i = 0; i < BattleshipsConfig.FIELD_SIZE; i++) {
 			int row = i + 1;
 			System.out.print(row + ", ");
 		}
